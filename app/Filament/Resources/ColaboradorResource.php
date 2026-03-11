@@ -60,6 +60,16 @@ class ColaboradorResource extends Resource
                 Tables\Columns\TextColumn::make('email')
                 ->label('E-mail')
                 ->searchable(),
+
+                Tables\Columns\TextColumn::make('nivel')
+                ->label('Cargo')
+                ->formatStateUsing(function ($state) {
+                   return match ($state) {
+                      1 => 'Administrador',
+                      2 => 'Colaborador',
+                     default => 'Usuário',
+                   };
+               }),
             ])
             ->filters([
                 //
