@@ -1,6 +1,6 @@
 # Sistema de Gestão de Clientes (SGC)
 ---
-
+<img src="imagens/logo.png" width="800">
 # Sobre o Sistema
 
 O **Sistema de Gestão de Clientes (SGC)** é uma aplicação web desenvolvida para auxiliar no gerenciamento de informações de empresas, clientes e colaboradores.
